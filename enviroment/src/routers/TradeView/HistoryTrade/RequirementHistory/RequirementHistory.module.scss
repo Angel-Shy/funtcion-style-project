@@ -1,0 +1,41 @@
+.RequirementHistoryContainer{
+  .icon{
+    cursor: pointer;
+    img{
+      vertical-align: text-bottom;
+      width: 20px;
+    }
+    font-family: 宋体;
+    font-size: 15px;
+  }
+
+  .transactionType{
+     img{
+       width: 14px;
+       vertical-align: text-bottom;
+     }
+     span{
+       color: #17223b;
+       font-family: remix;
+       font-weight: 500;
+     }
+  }
+  .createTransactionType{
+    img{
+      width: 16px;
+      vertical-align: text-bottom;
+    }
+  }
+  .iconTD{
+    img{
+      width: 16px;
+      vertical-align: text-bottom;
+    }
+  }
+  .showTime{
+    span{
+      color:#0577fc;
+      font-size: 12px;
+    }
+  }
+}

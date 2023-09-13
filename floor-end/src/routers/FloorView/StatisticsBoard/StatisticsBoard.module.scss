@@ -1,0 +1,62 @@
+.statisticsBoard{
+  height: 500px;
+  margin: 0px 20px;
+  $height:350px;
+  //border: 1px solid #2ec7c9;
+
+  .titleHeader{
+    ul{
+      border-bottom: 1px solid #2ec7c9;
+      margin-bottom: 10px;
+      min-width: 400px;
+      overflow: hidden;
+      &::after{
+        //清楚浮动
+        display: block;
+        content: "";
+        clear: both;
+      }
+      //padding-left: 2px;
+      //background-color: white;
+      list-style: none;
+      width: 100%;
+      &>li:first-of-type{
+        border-left: 1px solid gainsboro;
+      }
+      &>li{
+        cursor: pointer;
+        float: left;
+        display: inline-block;
+        border-right: 1px solid #2ec7c9;
+        border-top: 1px solid #2ec7c9;
+        background-color: transparent;
+        color: white;
+        padding: 5px 20px;
+        font-size: 14px;
+        //transform: skewX(-10deg);
+        &>div{
+          //transform: skewX(10deg);
+          letter-spacing: 1px;
+          a{
+            text-decoration: none;
+          }
+          img{
+            width: 16px;
+            vertical-align: middle;
+          }
+        }
+      }
+      .activeLi{
+        background-color: #1296db;
+        color: white;
+      }
+    }
+  }
+  .contentBody{
+    color: white;
+    //padding: 10px;
+    min-height: 445px;
+    //border: 1px solid #2ec7c9;
+    background-color: transparent;
+  }
+}

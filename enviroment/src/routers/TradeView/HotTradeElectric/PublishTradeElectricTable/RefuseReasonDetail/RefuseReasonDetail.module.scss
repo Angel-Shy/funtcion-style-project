@@ -1,0 +1,23 @@
+.reasonContainer{
+  height: 420px;
+  width: 100%;
+  .reasonMessage{
+    height: 350px;
+    .reasonHeader{
+      background-color: #E0F4FF;
+      padding:10px 5px;
+      font-size: 15px;
+      font-weight: 600;
+      font-family: "宋体";
+      color: #005C97;
+    }
+    .message{
+      background-color: #E0F4FF;
+      padding:10px 5px;
+      font-size: 14px;
+      font-family: "宋体";
+      text-indent: 15px;
+    }
+  }
+}
+

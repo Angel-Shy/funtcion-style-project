@@ -1,0 +1,84 @@
+$btn-default-color:RGB(0,146,252);
+.button-default{
+  padding: 0px 12px;
+  background-color: $btn-default-color;
+  outline: none;
+  color: white;
+  border: none;
+  font-weight:400;
+  text-decoration: none;
+  display: inline-block;
+  white-space: nowrap;
+  cursor: pointer;
+  height: 32px;
+  line-height: 32px;
+  font-size: 13px;
+  &:hover{
+    color: white;
+    background-color: RGB(11,171,252);
+  }
+}
+
+.button-white{
+  padding: 0px 12px;
+  background-color: white;
+  outline: none;
+  color: black;
+  border: 1px double rgba(2,2,2,0.2);
+  font-weight:400;
+  text-decoration: none;
+  display: inline-block;
+  white-space: nowrap;
+  cursor: pointer;
+  height: 32px;
+  line-height: 32px;
+  font-size: 13px;
+  &:hover{
+    border-color: RGB(11,171,252);
+  }
+}
+
+.button-green{
+  padding: 0px 12px;
+  background-color: RGB(138,204,121);
+  outline: none;
+  color: white;
+  border: 1px double rgba(2,2,2,0.2);
+  font-weight:400;
+  text-decoration: none;
+  display: inline-block;
+  white-space: nowrap;
+  cursor: pointer;
+  height: 32px;
+  line-height: 32px;
+  font-size: 13px;
+  &:hover{
+    border-color: RGB(11,171,252);
+  }
+}
+
+
+.a-link{
+  color: $btn-default-color;
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  transition: color .3s;
+  font-weight: 400;
+  letter-spacing: 1px;
+  -webkit-text-decoration-skip: objects;
+}
+
+$radius-gap:30;
+@while $radius-gap > 0 {
+  .border-radius-#{$radius-gap}{
+    border-radius: $radius-gap + 0px;
+  }
+
+  .border-radius-#{$radius-gap}:focus{
+    outline: none;
+  }
+
+  $radius-gap : $radius-gap - 2;
+}

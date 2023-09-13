@@ -1,0 +1,75 @@
+.FUIButton{
+  padding: 0px 12px;
+  background-color: $basic-color;
+  outline: none;
+  color: white;
+  font-weight:400;
+  letter-spacing: 2px;
+  text-decoration: none;
+  display: inline-block;
+  white-space: nowrap;
+  cursor: pointer;
+  height: 32px;
+  line-height: 32px;
+  font-size: 13px;
+}
+
+.FUI-btnBlack{
+  background-color: $basic-color;
+  color: white;
+  border: none;
+  &:hover{
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+  }
+}
+
+.FUI-btnGrey{
+  background-color: $basic-color-light-more;
+  color: white;
+  border: none;
+  &:hover{
+    color: white;
+    background-color: $basic-color-light-more;
+  }
+}
+
+.FUI-btnWhite{
+  background-color: white;
+  color: $basic-color;
+  border: 1px solid gainsboro;
+  &:hover{
+    background-color: ghostwhite;
+  }
+}
+
+
+.FUI-btnBlue{
+  background-color: #1372ab;
+  color: white;
+  border: 1px solid gainsboro;
+  &:hover{
+    background-color: #005C97;
+  }
+}
+
+.FUI-btnRed{
+  background-color: red;
+  color: white;
+  border: 1px solid gainsboro;
+  &:hover{
+    background-color: $basic-color-red;
+  }
+}
+
+.FUI-btnDisable{
+  background-color: $basic-color-light-more;
+  color: white;
+  border: none;
+  cursor: not-allowed;
+  &:hover{
+    color: white;
+    background-color: $basic-color-light-more;
+  }
+}
+

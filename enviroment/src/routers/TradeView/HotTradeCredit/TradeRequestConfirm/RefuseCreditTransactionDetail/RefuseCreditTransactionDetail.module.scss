@@ -1,0 +1,31 @@
+.header{
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-family: "宋体";
+  font-size: 14px;
+  color: #1296db;
+}
+.textarea{
+  width: 940px;
+  min-height: 100px;
+  outline: none;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.errorMessageFromServer{
+  color: #ff6768;
+  font-family: 宋体;
+  font-size: 14px;
+  //animation: animationMove 0.5s linear 0s infinite alternate running backwards ;
+  animation: error-dance 1s linear 0s infinite alternate running backwards;
+}
+
+.pointer{
+  margin-left: 8px;
+  vertical-align: -10%;
+  font-size: 15px;
+  &:hover{
+    cursor: pointer;
+  }
+}

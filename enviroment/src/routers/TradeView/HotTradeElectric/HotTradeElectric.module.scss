@@ -1,0 +1,38 @@
+.tabPanelElectric{
+  padding: 10px;
+  background-color: white;
+  border-left: 1px solid gainsboro;
+  border-right: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
+  .tabs{
+    list-style: none;
+    border-bottom: 1px solid gainsboro;
+    li{
+      border-top: 1px solid white;
+      border-left:1px solid white;
+      border-right: 1px solid white;
+      text-align: left;
+      float: left;
+      padding:10px 20px 10px 0;
+      font-weight: 500;
+      font-family: remix;
+      font-size: 15px;
+      color: black;
+    }
+    .active{
+      border-bottom: 2px solid #0577fc;
+      margin-bottom: -2px;
+      //color: #0577fc;
+    }
+  }
+  .tabContent{
+    padding-top: 15px;
+  }
+
+  .disappear{
+    display: none;
+    visibility: hidden;
+  }
+
+}
+

@@ -1,0 +1,126 @@
+.dialogContentAddNode{
+  $body-bc-color:RGB(240,242,245);
+  $narbar-color: #1372ab;
+  $right-banner-bc-color:white;
+  .item-state{
+    font-weight: 600;
+    font-size: 15px;
+    color: black;
+    font-family: "宋体";
+  }
+
+  .myState-line{
+    margin: 10px auto;
+  }
+
+  .myState{
+    display: inline-block;
+    text-align: center;
+    width: 110px;
+    font-size: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: rgba(243,245,247,0.99);
+    font-weight: 600;
+  }
+
+  .myState-answer{
+    display: inline-block;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-left: 30px;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    width: 80%;
+  }
+
+  .myinput-long{
+    width: 70%;
+  }
+  .myinput-middle-long{
+    width: 300px;
+  }
+
+  .myinput{
+    box-sizing: border-box;
+    margin: 0;
+    font-variant: tabular-nums;
+    list-style: none;
+    font-feature-settings: "tnum";
+    position: relative;
+    display: inline-block;
+    min-width: 0;
+    padding: 4px 11px;
+    color: #000000d9;
+    font-size: 14px;
+    height: 32px;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    transition: all .3s linear;
+    outline: none;
+    &:focus{
+      border-radius: 3px;
+      border: 1px double $narbar-color;
+    }
+  }
+
+
+  .mySelect{
+    box-sizing: border-box;
+    margin: 0;
+    font-variant: tabular-nums;
+    list-style: none;
+    font-feature-settings: "tnum";
+    position: relative;
+    display: inline-block;
+    min-width: 0;
+    padding: 4px 11px;
+    color: #000000d9;
+    font-size: 14px;
+    line-height: 1.715;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    transition: all .3s linear;
+    outline: none;
+    &:focus{
+      border-radius: 3px;
+      border: 1px solid $narbar-color;
+    }
+  }
+
+  .errorInput{
+    border:1px solid red !important; ;
+  }
+
+  .errorMessageFromServer{
+    color: #ff6768;
+    font-family: 宋体;
+    //animation: animationMove 0.5s linear 0s infinite alternate running backwards ;
+    animation: error-dance 1s linear 0s infinite alternate running backwards;
+  }
+
+  .pointer:hover{
+    cursor: pointer;
+  }
+  .textarea{
+    outline: none;
+    padding: 5px;
+  }
+
+
+  @keyframes error-dance {
+    from{
+      opacity: 0.4;
+    }
+    50%{
+      opacity: 0.7;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+}

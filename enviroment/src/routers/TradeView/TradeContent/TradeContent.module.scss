@@ -1,0 +1,23 @@
+.tradeContainer{
+  padding: 5px;
+  border: 1px solid gainsboro;
+  background-color: white;
+  $marginMerge: 10px;
+  margin-left: $marginMerge;
+  margin-right: $marginMerge;
+  .icon{
+    cursor: pointer;
+    img{
+      vertical-align: text-bottom;
+      width: 20px;
+    }
+    font-size: 14px;
+  }
+}
+
+.divisionContainer{
+  $marginMerge: 10px;
+  background-color: white;
+  margin-left: $marginMerge;
+  margin-right: $marginMerge;
+}

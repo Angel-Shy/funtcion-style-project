@@ -1,0 +1,93 @@
+@import "../../../../sass/_extend/_button.scss";
+
+.noticeButton{
+  @extend .defaultButton;
+  background-color:  rgba(0,0,0,0.9);
+  color: ghostwhite;
+  border-radius: 2px;
+  border: 1px solid rgba(0,0,0,0.9);
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+  height: 28px;
+  line-height: 28px;
+  font-size: 13px;
+  font-weight: 400;
+  &:hover{
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+  }
+  margin-left: 25px;
+  font-family: "宋体";
+}
+
+/* 加载最高 */
+$zIndex: 100;
+
+.dg{
+  position: fixed;
+  left: 0px;
+  top: 0px;
+}
+
+.dialogBackGround{
+  z-index: $zIndex; /* 背景 index */
+  height: 100%;
+  width: 100%;
+  opacity: 0.15;
+  @extend .dg;
+  background-color: black;
+}
+
+.noticeContainer{
+  z-index: $zIndex + 2;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 110px;
+  overflow: hidden;
+  margin-left:auto;
+  margin-right:auto;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px 15px;
+  border: 1px solid rgba(5,5,5,0.2);
+  &>.noticeHeader{
+    height: 60px;
+    line-height: 60px;
+    background-color: white;
+    border-bottom:1px solid rgba(5,5,5,0.15);
+    .noticeHeaderTitle{
+      font-size: 1.221em;
+      font-weight: 700;
+      font-family: remix;
+      color: black;
+    }
+    .noticeClose{
+      text-align: right;
+      img{
+        width: 22px;
+        transition: all 2s linear;
+      }
+      img:hover{
+        transform: rotate(360deg);
+      }
+    }
+  }
+  &>.dialogContent{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 12px;
+    overflow: auto;
+    font-family: "宋体";
+    font-size: 14px;
+    overflow: hidden;
+  }
+  &>.dialogFooter{
+    margin-top: 20px;
+    text-align: right;
+    button{
+      margin-left: 15px;
+    }
+  }
+}

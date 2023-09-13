@@ -1,0 +1,67 @@
+.contractTables{
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: white;
+  border-left: 1px solid gainsboro;
+  border-right: 1px solid gainsboro;
+  .table-container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    .table{
+      width: 100%;
+      border-spacing: 0px;
+      border-collapse: collapse;
+      table-layout:auto;
+      >thead{
+        tr{
+          td{
+            font-family: 宋体;
+            height: 50px;
+            font-weight: 500;
+            color: grey;
+            font-size: 15px;
+            text-align: left;
+          }
+          border-bottom: gainsboro solid 1px;
+        }
+      }
+    }
+    .table-hover{
+      tbody{
+        tr{
+          border-bottom: gainsboro solid 1px;
+          td{
+            height: 37px;
+            font-size: 13px;
+            font-weight: 400;
+          }
+          &:hover{
+            background-color: rgba(0,0,0,0.01);
+            height: 36px;
+          }
+        }
+      }
+
+    }
+  }
+
+  .link-detail-button{
+    color: RGB(0,146,252);
+    text-decoration: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    transition: color .3s;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    -webkit-text-decoration-skip: objects;
+    &:hover{
+      color: #ff6768;
+    }
+  }
+}

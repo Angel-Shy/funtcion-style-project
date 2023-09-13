@@ -1,0 +1,24 @@
+.topDirectionDetail{
+  border: 1px solid gainsboro;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: white;
+  .direction-detail{
+     &>.line{
+       //background-color: #ff6768;
+       height: 34px;
+       line-height: 34px;
+       font-family: 宋体;
+       &>.item{
+         font-size: 14px;
+         color: grey;
+         padding-right: 15px;
+       }
+       &>.item-state{
+         font-size: 14px;
+         font-weight: 500;
+         color: #1372ab;
+       }
+     }
+  }
+}

@@ -1,0 +1,34 @@
+@import "../../../../sass/_extend/_button.scss";
+
+$loading_bc_color: rgba(0,0,0,0.75);
+
+.button{
+  @extend .defaultButton;
+  background-color: black ;//rgb(32, 95, 236);
+  color: ghostwhite;
+  border-radius: 5px;
+  border: 1px solid rgb(32, 95, 236);
+  padding-left: 15px;
+  letter-spacing: 3px;
+  padding-right: 15px;
+  cursor: pointer;
+  height: 34px;
+  line-height: 34px;
+  &:hover{
+    background-color: rgba(0,0,0,0.8);
+  }
+}
+
+.loading{
+  background-color: $loading_bc_color;
+  cursor: not-allowed !important;
+}
+
+.loadingImg{
+  width: 20px;
+  vertical-align: -20%;
+  padding-right: 5px;
+  background-color: transparent;
+}
+
+

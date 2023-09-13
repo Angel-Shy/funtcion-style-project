@@ -1,0 +1,237 @@
+$height:200px;
+
+.contractDivisionPage{
+  padding: 10px;
+  background-color: white;
+
+  .MySelect{
+    display: inline-block;
+    height: 26px;
+    line-height:26px;
+    width: 70px;
+    outline: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    &:focus{
+      border: 1px solid #0577fc;
+    }
+  }
+}
+
+.TableContainer{
+  .icon{
+    cursor: pointer;
+    img{
+      vertical-align: text-bottom;
+      width: 20px;
+    }
+    font-family: 宋体;
+    font-size: 15px;
+  }
+
+  .transactionType{
+    img{
+      width: 14px;
+      vertical-align: text-bottom;
+    }
+    span{
+      color: #17223b;
+      font-family: remix;
+      font-weight: 500;
+    }
+  }
+  .createTransactionType{
+    img{
+      width: 16px;
+      vertical-align: text-bottom;
+    }
+    span{
+      color: #1372ab;
+    }
+  }
+  .iconTD{
+    img{
+      width: 16px;
+      vertical-align: text-bottom;
+    }
+  }
+  .iconTD{
+    img{
+      width: 16px;
+      vertical-align: text-bottom;
+    }
+  }
+  .showTime{
+    span{
+      color:#0577fc;
+      font-size: 12px;
+    }
+  }
+
+  .blueStyle {
+    color: #005C97;
+    font-size: 13px;
+    &:hover{
+      color: #ff4d4f;
+    }
+  }
+  .searchCondition{
+    margin-bottom: 20px;
+    background-color:white;
+    overflow: hidden;
+    form{
+      .formLineMix{
+        word-space:nowrap ;
+        overflow: auto;
+        height: 36px;
+        padding-left: 5px;
+        margin-bottom: 7px;
+      }
+    }
+    $itemWidth: 100px;
+    .item{
+      font-size: 15px;
+      font-family: 宋体;
+      display: inline-block;
+      width: $itemWidth;
+    }
+    .itemAfter{
+      font-size: 15px;
+      font-family: 宋体;
+      display: inline-block;
+      text-align: center;
+      width: $itemWidth;
+    }
+
+    .myInputLong{
+      width: 450px;
+    }
+    .myInputMiddleLong{
+      width: 300px;
+    }
+    .myInput{
+      text-indent: 10px;
+      box-sizing: border-box;
+      margin: 0;
+      font-variant: tabular-nums;
+      list-style: none;
+      font-feature-settings: "tnum";
+      position: relative;
+      display: inline-block;
+      width: 200px;
+      font-size: 14px;
+      line-height: 32px;
+      height: 32px;
+      background-color: #fff;
+      background-image: none;
+      border: 1px solid #d9d9d9;
+      border-radius: 2px;
+      transition: all .3s linear;
+      outline: none;
+      &:focus{
+        border-radius: 3px;
+        border: 1px double #1372ab;
+      }
+    }
+  }
+}
+
+.tradeTableContainer{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  .table{
+    width: 100%;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    table-layout:auto;
+    >thead{
+      background-color: #f5f6fa;//rgba(0,0,0,0.01);
+      tr{
+        td:nth-last-of-type(1){
+          text-align: right;
+          padding-right: 10px;
+        }
+        td{
+          font-family: remix;
+          height: 40px;
+          font-weight: 600;
+          color: black;
+          font-size: 15px;
+          text-align: left;
+        }
+        border-bottom: ghostwhite solid 1px;
+      }
+    }
+  }
+  .tableHover{
+    tbody{
+      tr:nth-of-type(even){
+        background-color: rgba(0,0,0,0.03);
+      }
+      tr{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        .index{
+          background-color: #263859;
+          padding: 3px;
+          border-radius: 5px;
+          color: white;
+        }
+        border-bottom: white solid 1px;
+        td{
+          height: 37px;
+          font-size: 13px;
+          font-weight: 400;
+        }
+        td:nth-last-of-type(1){
+          padding-right: 10px;
+          text-align: right;
+        }
+        &:hover{
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          //box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          //background-color: rgba(0,0,0,0.02);
+          height: 36px;
+        }
+      }
+    }
+  }
+}
+.linkDetailOperation{
+  color: RGB(0,146,252);
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s linear 0s;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border: none;
+  margin-left: 5px;
+  margin-right: 5px;
+  -webkit-text-decoration-skip: objects;
+  &:hover{
+    color: #ff6768;
+  }
+}
+
+.linkDetailButton{
+  color: black;
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  transition: all .3s linear;
+  font-weight: 400;
+  letter-spacing: 1px;
+  border: none;
+  margin-left: 5px;
+  margin-right: 5px;
+  -webkit-text-decoration-skip: objects;
+  &:hover{
+    color: #1296db;
+  }
+}

@@ -1,0 +1,23 @@
+/*浮动布局*/
+.float-layout{
+  @each $fl in left,right {
+    .float-#{$fl}{
+      float: $fl;
+    }
+  }
+}
+.float-layout::after{
+  //清楚浮动
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.center{
+  text-align: center;
+}
+
+.disappear{
+  display: none;
+  visibility: hidden;
+}

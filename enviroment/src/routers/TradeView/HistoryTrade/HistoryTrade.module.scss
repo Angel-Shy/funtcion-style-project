@@ -1,0 +1,75 @@
+.historyContainerBigger{
+  .titleHeader{
+    ul{
+      margin-bottom: -1px;
+      min-width: 400px;
+      overflow: hidden;
+      &::after{
+        //清楚浮动
+        display: block;
+        content: "";
+        clear: both;
+      }
+      //padding-left: 2px;
+      //background-color: white;
+      list-style: none;
+      width: 100%;
+      &>li:first-of-type{
+        border-left: 1px solid gainsboro;
+      }
+      &>li{
+        cursor: pointer;
+        float: left;
+        display: inline-block;
+        border-right: 1px solid gainsboro;
+        border-top: 1px solid gainsboro;
+        background-color: white;
+        padding: 5px 20px;
+        font-size: 14px;
+        //transform: skewX(-10deg);
+        &>div{
+          //transform: skewX(10deg);
+          letter-spacing: 1px;
+          a{
+            text-decoration: none;
+          }
+          img{
+            width: 16px;
+            vertical-align: middle;
+          }
+        }
+      }
+      .activeLi{
+        background-color: #0577fc;
+        color: white;
+      }
+    }
+  }
+  .contentBody{
+    padding: 10px;
+    min-height: 300px;
+    //border-top: 1px solid gainsboro;
+    border-left: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+    background-color: white;
+  }
+  .backToMain{
+    border-top: 1px solid gainsboro;
+    border-left: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+    background-color: white;
+    padding-right: 15px;
+    padding-top: 10px;
+    .back{
+      cursor: pointer;
+      font-size: 13px;
+      color: #1372ab;
+      &>span{
+        padding-right: 5px;
+      }
+    }
+  }
+
+}
+
+

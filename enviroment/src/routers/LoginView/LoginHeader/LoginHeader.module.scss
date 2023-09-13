@@ -1,0 +1,53 @@
+$headerHeight: 55px;
+.container{
+  width: 100%;
+}
+.header{
+  margin-left:  auto;
+  margin-right: auto;
+  padding-top: 15px;
+  width: 92%;
+  height: $headerHeight;
+  .brand{
+    cursor: pointer;
+    height: $headerHeight;
+    overflow: hidden;
+    margin-left: 15px;
+    line-height: $headerHeight;
+    font-family: remix;
+    &>span>img{
+      vertical-align: -12%;
+      width: 28px;
+      padding-right: 8px;
+    }
+    font-size: 21px;
+    font-weight: 600;
+    color: rgba(0,0,0,0.8);
+    transition: all .5s linear 0s;
+    &:hover{
+      color: #17223b;
+    }
+  }
+  .forget{
+    &>span{
+      margin-top: 11px;
+      line-height: 30px;
+      padding-left: 10px;
+      padding-right: 10px;
+      height: 30px;
+      font-weight: 400;
+      font-size: 14px;
+      letter-spacing: 1px;
+      display: inline-block;
+      border: none;
+      margin-right: 25px;
+      border-radius: 15px;
+      cursor: pointer;
+      color: rgba(0,0,0,0.7);
+      &:hover{
+        font-weight: 600;
+        color: black ;//rgb(32, 95, 236);
+      }
+    }
+  }
+}

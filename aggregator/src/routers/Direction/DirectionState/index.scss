@@ -1,0 +1,34 @@
+.directionState{
+  margin-top: 10px;
+  margin-right: 15px;
+  margin-left: 15px;
+  padding: 10px;
+  border: 1px solid gainsboro;
+  background-color: white;
+  color: grey;
+  .item{
+    font-weight: 400;
+    font-size: 15px;
+    color: grey;
+  }
+  .item-state{
+    font-weight: 500;
+    font-size: 15px;
+    color: #17223b;
+    font-family: "宋体";
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .item-state-direction{
+    font-weight: 500;
+    font-family: 宋体;
+    font-size: 15px;
+    color: #1372ab;
+    padding-right: 20px;
+  }
+  .number{
+    font-weight: 600;
+    font-size: 18px;
+    color: #1372ab;
+  }
+}

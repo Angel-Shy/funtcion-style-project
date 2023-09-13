@@ -1,0 +1,16 @@
+.blockHeader{
+  padding: 10px;
+  background-color: white;
+  border: 1px solid gainsboro;
+  margin-right: 15px;
+  margin-left: 15px;
+  &>div:first-of-type{
+    height: 32px;
+    line-height: 32px;
+    color: #1372ab;
+    font-size: 15px;
+  }
+  &>div:nth-of-type(2){
+    padding-right: 5px;
+  }
+}

@@ -1,0 +1,293 @@
+$basic-color:#17223b;
+$basic-color-light:#263859;
+$basic-color-light-more:#6b778d;
+$basic-color-light-more-1:#E0F4FF;
+$basic-color-red:#ff6768;
+
+@import "Layout/flex";
+@import "Layout/float";
+@import "PaddingMargin/padding";
+@import "Divider/divider";
+@import "Input/input";
+@import "Font/iconfontBootstrap";
+@import "Button/history";
+@import "Button/button";
+@import "Dialog/dialog";
+
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('../static/fonts/iconfont/glyphicons-halflings-regular.eot');
+    src: url('../static/fonts/iconfont/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../static/fonts/iconfont/glyphicons-halflings-regular.woff') format('woff'), url('../static/fonts/iconfont/glyphicons-halflings-regular.ttf') format('truetype'), url('../static/fonts/iconfont/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+*{
+    padding:0px;
+    margin:0px;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+}
+
+#root{
+    height: 100%;
+}
+
+
+.loginLayout{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    transition: all 0.5s linear;
+    &>.loginLeft{
+        position: relative;
+        min-width: 700px;
+        $font-color:white;
+        background-color: $basic-color;
+        &>:first-child{
+            margin-top: 210px;
+        }
+        height: 100%;
+        &>.header-title{
+            color: $font-color;
+            font-weight: 600;
+            text-align: center;
+            font-size: 2.1em;
+            letter-spacing: 3px;
+            &:first-letter{
+                color: ghostwhite;
+                font-size: 1.1em;
+            };
+        }
+        &>.header-title-eng{
+            margin-top: 15px;
+            color: $font-color;
+            font-weight: 600;
+            text-align: center;
+            font-size: 1.0em;
+            letter-spacing: 1px;
+            font-family: 仿宋;
+            &:first-letter{
+                color: ghostwhite;
+                font-size: 1.1em;
+            };
+        }
+        &>.header-icon{
+            margin-bottom: 15px;
+            text-align: center;
+            img{
+                width: 75px;
+            }
+        }
+        &>.company{
+            font-family: 仿宋;
+            margin-top: 15px;
+            color: $basic-color-light-more;
+            font-weight: 500;
+            text-align: center;
+            font-size: 1.2em;
+            letter-spacing: 1px;
+        }
+        &>.technology-server{
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            font-family: 宋体;
+            margin-bottom: 10px;
+            color: $basic-color-light-more;
+            font-weight: 500;
+            text-align: center;
+            font-size: 15px;
+        }
+    }
+    &>.loginRight{
+        min-width: 420px;
+        max-width: 500px;
+        height: 100%;
+        background-color: white;
+        &>.loginForm{
+            width: 400px;
+            height: 700px;
+            margin: 220px auto 0 auto;
+            //border: 1px solid gray;
+            .title{
+                padding-top: 5px;
+                padding-bottom: 5px;
+                text-align: center;
+                font-weight: 600;
+                font-size: 25px;
+                color: $basic-color;
+                letter-spacing: 2px;
+                margin-bottom: 20px;
+            }
+            .loginLink{
+                font-family: 宋体;
+                display: inline-block;
+                text-decoration: none;
+                color: $basic-color;
+                font-weight: 500;
+                font-size: 14px;
+                padding-bottom: 10px;
+                border-bottom: 2px solid white;
+                &:hover{
+                    color: $basic-color-red;
+                    border-bottom: 2px solid $basic-color-red;
+                }
+            }
+            .active{
+                color: $basic-color-red;
+                font-weight: 600;
+                border-bottom: 2px solid $basic-color-red;
+            }
+            $minx-margin-top: 30px;
+            .phone{
+                margin-top: $minx-margin-top;
+            }
+            .normal{
+                margin-top: $minx-margin-top;
+            }
+        }
+    }
+}
+
+.vcodeWrap{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 25px;
+    $height: 32px;
+    position: relative;
+    width: 113px;
+    height: $height;
+    background-color: gainsboro;
+    border: 1px solid gainsboro;
+    overflow: hidden;
+    .itemStr{
+        float: left;
+        width: 10px;
+        height: 10px;
+        margin-left: 12px;
+        margin-top: 5px;
+    }
+    .mask{
+        position: absolute;
+        width: 113px;
+        height: 32px;
+        opacity: 0.4;
+        text-align: center;
+        color: white;
+        font-family: 宋体;
+        line-height: $height;
+        background-color: #17223b;
+    }
+}
+
+@keyframes animation-login-show {
+    from{
+        opacity: 0.1;
+        transform: translate(0px, 0px);
+    }
+    50%{
+        transform: translate(0px, 70px);
+        opacity: 0.5;
+    }
+    to{
+        transform: translate(0px, 130px);
+        opacity: 1;
+    }
+}
+
+$input-height: 25px;
+$wrap-width: 320px;
+$input-width: 240px;
+.input-wrap{
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom:5px;
+    padding-left: 15px;
+    width: $wrap-width;
+    margin: 0 auto 20px auto;
+    .inputTitle{
+
+    }
+    input{
+        height: 28px;
+        width: $input-width;
+        //border: 1px solid gray;
+        border: none;
+        outline: none;
+        margin-left: 15px;
+    }
+    img{
+        width: 25px;
+        vertical-align: top;
+    }
+}
+.button-wrap{
+    width: $wrap-width + 18px;
+    margin: 0 auto;
+    $basic-color:#17223b;
+    $basic-color-light-more:#6b778d;
+    .Button-disabled{
+        width: 100%;
+        padding: 0px 12px;
+        background-color: $basic-color-light-more;
+        outline: none;
+        color: white;
+        border: none;
+        font-weight:400;
+        text-decoration: none;
+        display: inline-block;
+        white-space: nowrap;
+        cursor: pointer;
+        height: 32px;
+        line-height: 32px;
+        font-size: 13px;
+    }
+    .Button{
+        width: 100%;
+        padding: 0px 12px;
+        letter-spacing: 2px;
+        border-radius: 5px;
+        background-color: $basic-color;
+        outline: none;
+        color: white;
+        border: none;
+        font-weight:400;
+        text-decoration: none;
+        display: inline-block;
+        white-space: nowrap;
+        cursor: pointer;
+        height: 32px;
+        line-height: 32px;
+        font-size: 13px;
+        &:hover{
+            color: white;
+            background-color: $basic-color-light-more;
+        }
+    }
+}
+.validate-wrap{
+    width: $wrap-width + 17px;
+    margin: 0 auto 20px auto;
+    input{
+        width: 180px;
+        padding-left: 15px;
+        height: 33px;
+        outline: none;
+        border: 1px solid gainsboro;
+        border-radius: 5px;
+    }
+    .error{
+        border: 1px solid red !important;;
+    }
+    .Button{
+        margin-left: 25px;
+        width: 113px;
+    }
+}
+

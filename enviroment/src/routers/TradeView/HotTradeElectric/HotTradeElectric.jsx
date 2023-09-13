@@ -1,0 +1,68 @@
+import React from 'react';
+import stl from './HotTradeElectric.module.scss';
+import Header from "./Header/Header";
+import {Outlet, useNavigate} from  'react-router-dom';
+
+function HotTradeElectric(props) {
+
+    let navigater = useNavigate();
+
+    const [active, setActive] = React.useState({
+        tabs:[true, false]
+    });
+
+    function showMe(index){
+        return (e) => {
+            if (index == 0){
+                navigater('/electric/recipient')
+            }else{
+                navigater('/electric/sender')
+            }
+
+            active.tabs.fill(false);
+            active.tabs[index] = true;
+            setActive({
+                tabs: active.tabs
+            })
+        }
+    }
+
+    React.useEffect(() => {
+        let route = window.location.hash.slice(1).split("/")[2];
+        let index = 0;
+        if (route === "recipient"){index = 0;}
+        else if(route === "sender"){index = 1;}
+        active.tabs.fill(false);
+        active.tabs[index] = true;
+        setActive({
+            tabs: [...active.tabs]
+        });
+        return () => {
+            setActive({
+                tabs:[true, false]
+            });
+        }
+    },[]);
+
+
+    return (
+        <div className={'content'}>
+            <Header/>
+            <div className={stl.tabPanelElectric}>
+                <ul className={`${stl.tabs} float-layout`} >
+                    <li onClick={showMe(0)} className={active.tabs[0]?`${stl.active}`:''} >
+                        交易请求
+                    </li>
+                    <li onClick={showMe(1)} className={active.tabs[1]?`${stl.active}`:''}>
+                        我发起的交易
+                    </li>
+                </ul>
+                <div className={`${stl.tabContent}`}>
+                    <Outlet/>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+export default HotTradeElectric;

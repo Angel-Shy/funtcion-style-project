@@ -1,0 +1,202 @@
+@import "../../../../sass/_extend/_button.scss";
+
+.blackButton{
+    @extend .defaultButton;
+    background-color:  rgba(0,0,0,0.9);
+    color: ghostwhite;
+    border-radius: 2px;
+    border: 1px solid rgba(0,0,0,0.9);
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    height: 28px;
+    line-height: 28px;
+    font-size: 13px;
+    font-weight: 400;
+    &:hover{
+        background-color: white;
+        color: #17223b;
+    }
+    margin-left: 25px;
+    font-family: "宋体";
+}
+
+.bodyContent{
+    $marginMerge: 10px;
+    margin-left: $marginMerge;
+    margin-right: $marginMerge;
+    margin-top: 10px;
+    padding: 5px;
+    border-left: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+    border-top: 1px solid gainsboro;
+    background-color: white;
+    .container{
+        .itemContainer{
+            background-color: white;
+            min-width: 1400px;
+            overflow: hidden;
+            box-sizing: content-box;
+            margin-bottom: 7px;
+            height: 90px;
+            border: 1px solid gainsboro;
+            border-radius: 10px;
+            &:hover{
+                //color: rgb(32, 95, 236);
+                //font-weight: 600;
+                //background-color: rgba(0,0,0,0.85);
+                box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+                border-color: white;
+                border-radius: 5px;
+            }
+            .line{
+                //background-color: #ff6768;
+                padding: 5px;
+                .type{
+                    img{
+                        width: 22px;
+                        vertical-align: text-top;
+                        padding-right: 10px;
+                    }
+                }
+                .transactionId{
+                    cursor: pointer;
+                    display: inline-block;
+                    width: 280px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    font-family: "宋体";
+                    font-size: 14px;
+                    &:hover{
+                        background-color: #E0F4FF;
+                    }
+                }
+                .description{
+                    font-family: "宋体";
+                    font-size: 13px;
+                    display: inline-block;
+                    margin-left: 50px;
+                }
+                .direction{
+                    display: inline-block;
+                    margin-left: 20px;
+                    font-family: "宋体";
+                    font-size: 14px;
+                    .ID{
+                        display: inline-block;
+                        padding: 3px 5px;
+                        border-radius: 8px;
+                        background-color: gainsboro;
+                        color: #17223b;
+                        font-family: 宋体;
+                        font-weight: 600;
+                    }
+                    .tType{
+                        display: inline-block;
+                        padding: 3px 10px;
+                        border-radius: 8px;
+                        font-size: 13px;
+                        background-color:#1296db ; //rgba(0,0,0,0.55);
+                        width: 80px;
+                        text-align: center;
+                        color: white;
+                    }
+                    .endTime{
+                        display: inline-block;
+                        padding: 3px 10px;
+                        border-radius: 8px;
+                        font-size: 13px;
+                        //background-color: rgba(0,0,0,0.55);
+                        width: 150px;
+                        text-align: left;
+                        color: #005C97;
+                    }
+                }
+                .time{
+                    font-family: "宋体";
+                    font-size: 14px;
+                    img{
+                        width: 20px;
+                        vertical-align: sub;
+                        padding-right: 5px;
+                    }
+                    span{
+                        font-weight: 400;
+                        &:hover{
+                            color: rgb(32, 95, 236);
+                        }
+                    }
+                }
+            }
+            .contract{
+                padding: 5px;
+                display: flex;
+                .give{
+                    flex: 0 0 100px;
+                    //background-color: #ff6768;
+                    height: 38px;
+                    line-height: 40px;
+                    font-family: "宋体";
+                    font-size: 13px;
+                    text-align: center;
+                    font-weight: 400;
+                }
+                .condition{
+                    padding-left: 15px;
+                    &>div:first-child{
+                        //background-color: #ff6768;
+                        text-align: center;
+                        img{
+                            width: 22px;
+                        }
+                    }
+                    &>div:nth-of-type(2){
+                        text-align: center;
+                        //background-color: #1372ab;
+                        font-family: 宋体;
+                        padding-top: 5px;
+                        font-size: 15px;
+                        .unit{
+                            font-size: 14px;
+
+                        }
+                        .value{
+                            padding-right: 3px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+                .price{
+                    font-family: "宋体";
+                    height: 38px;
+                    line-height: 38px;
+                    padding-left: 20px;
+                    font-size: 14px;
+                    //background-color: #1296db;
+                    &>span:nth-of-type(1){
+
+                    }
+                }
+                .operation{
+                    flex: 1 1 100px;
+                    //background-color: #ff6768;
+                    height: 40px;
+                    .buttonContainer{
+                        text-align: right;
+                        //background-color: #1372ab;
+                    }
+                    .blackContent{
+                        height: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+.bodyContentFooter{
+
+}

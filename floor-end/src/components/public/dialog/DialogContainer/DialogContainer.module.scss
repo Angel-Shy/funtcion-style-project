@@ -1,0 +1,94 @@
+@import "../../../../sass/_extend/_button.scss";
+
+.dialogBackGround{
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  opacity: 0.65;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background-color: black;
+}
+
+.dialog{
+  z-index: 12;
+  position: fixed;
+  top: 110px;
+  left: 0px;
+  right: 0px;
+  margin-left:auto;
+  margin-right:auto;
+  background-color: transparent !important;
+  background-image: url('../../../../static/party/boxbackground.png');
+  background-size: 100% 100%;
+  border-radius: 2px;
+  border: 1px solid rgba(5,5,5,0.2);
+  padding: 10px;
+  overflow: hidden;
+  &>.dialogHeaderTitle{
+    height: 60px;
+    line-height: 60px;
+    background-color: transparent;
+    border-bottom:1px solid #2ec7c9;
+    .dialogTitleHeader{
+      font-size: 1.321em;
+      font-family: remix;
+      font-weight: 700;
+      color: white;
+    }
+    .dialogClose{
+      text-align: right;
+      img{
+        width: 25px;
+        transition: all 0.2s linear;
+      }
+      img:hover{
+        transform: scale(1.1,1.1);
+      }
+    }
+  }
+  &>div{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  &>.dialogContent{
+    //border-bottom: 1px solid rgba(5,5,5,0.2);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 12px;
+    overflow: auto;
+  }
+  &>.dialogFooter{
+    margin-top: 20px;
+    text-align: right;
+    button{
+      margin-left: 15px;
+    }
+  }
+}
+
+.waitingServer{
+
+}
+
+.noticeButton{
+  @extend .defaultButton;
+  background-color:  rgba(0,0,0,0.9);
+  color: ghostwhite;
+  border-radius: 2px;
+  border: 1px solid rgba(0,0,0,0.9);
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+  height: 28px;
+  line-height: 28px;
+  font-size: 13px;
+  font-weight: 400;
+  &:hover{
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+  }
+  margin-left: 25px;
+  font-family: "宋体";
+}

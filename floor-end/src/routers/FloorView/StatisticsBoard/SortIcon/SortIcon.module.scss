@@ -1,0 +1,15 @@
+.sort{
+  padding-left: 15px;
+  padding-right: 15px;
+  img{
+    width: 14px;
+    vertical-align: -10%;
+    padding-right: 5px;
+  }
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+  &:hover{
+    color: #1372ab;
+  }
+}

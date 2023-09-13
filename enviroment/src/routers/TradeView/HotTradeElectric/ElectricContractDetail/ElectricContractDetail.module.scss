@@ -1,0 +1,83 @@
+.electricContractContainer{
+  font-family: 宋体;
+  .header{
+    p{
+      margin-bottom: 10px;
+    }
+  }
+  .content{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-indent: 25px;
+    line-height: 35px;
+    code{
+      //background-color: RGB(246,248,250);
+      padding: 4px;
+      font-size: 14px;
+      //border:1px solid gainsboro;
+      border-bottom: 1px solid black;
+    }
+    .type{
+      background-color: RGB(246,248,250);
+      padding: 4px;
+      font-size: 14px;
+      border:1px solid gainsboro;
+    }
+
+  }
+  .tfooter{
+    p{
+      margin-bottom: 15px;
+    }
+  }
+  .rfooter{
+    text-indent: 25px;
+    line-height: 35px;
+    margin-top: 20px;
+  }
+
+  .leftItem{
+    padding-right: 10px;
+    color: black;
+    font-size: 14px;
+  }
+  .centerItem{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+    font-size: 14px;
+  }
+  .itemAnswer{
+    color: #263859;
+    padding-bottom: 2px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-bottom: 1px solid grey;
+  }
+}
+
+.linkDetailButton{
+  color: black;
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  transition: all .3s linear;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border: none;
+  margin-left: 5px;
+  margin-right: 5px;
+  -webkit-text-decoration-skip: objects;
+  &:hover{
+    color: #1296db;
+  }
+}
+
+.errorMessageFromServer{
+  color: #ff6768;
+  font-family: 宋体;
+  font-size: 14px;
+  //animation: animationMove 0.5s linear 0s infinite alternate running backwards ;
+  animation: error-dance 1s linear 0s infinite alternate running backwards;
+}

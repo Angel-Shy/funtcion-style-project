@@ -1,0 +1,103 @@
+$height:200px;
+$narbar-color: #1372ab;
+
+.searchBlockFUI{
+  background-color: white;
+  padding: 10px;
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+  border-top: 1px solid gainsboro;
+  border-left: 1px solid gainsboro;
+  border-right: 1px solid gainsboro;
+  form{
+    .form-line-mix{
+      word-space:nowrap ;
+      padding-left: 5px;
+      margin-bottom: 7px;
+      margin-top: 5px;
+    }
+  }
+  $itemWidth: 100px;
+  .item{
+    font-size: 15px;
+    font-family: 宋体;
+    display: inline-block;
+    width: $itemWidth;
+  }
+  .itemLen{
+    font-size: 15px;
+    font-family: 宋体;
+    display: inline-block;
+    width: 130px;
+  }
+  .itemAfter{
+    font-size: 15px;
+    font-family: 宋体;
+    display: inline-block;
+    text-align: center;
+    width: $itemWidth;
+  }
+  .itemAfterLen{
+    font-size: 15px;
+    font-family: 宋体;
+    display: inline-block;
+    text-align: center;
+    width: 130px;
+  }
+
+  .myinput-long{
+    width: 450px;
+  }
+  .myinput-middle-long{
+    width: 300px;
+  }
+  .myinput{
+    text-indent: 10px;
+    box-sizing: border-box;
+    margin: 0;
+    font-variant: tabular-nums;
+    list-style: none;
+    font-feature-settings: "tnum";
+    position: relative;
+    display: inline-block;
+    width: 220px;
+    font-size: 14px;
+    line-height: 32px;
+    height: 32px;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    transition: all .3s linear;
+    outline: none;
+    &:focus{
+      border-radius: 3px;
+      border: 1px double $narbar-color;
+    }
+  }
+  .myInputLong{
+    text-indent: 10px;
+    box-sizing: border-box;
+    margin: 0;
+    font-variant: tabular-nums;
+    list-style: none;
+    font-feature-settings: "tnum";
+    position: relative;
+    display: inline-block;
+    width: 570px;
+    font-size: 15px;
+    line-height: 32px;
+    height: 32px;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    transition: all .3s linear;
+    outline: none;
+    &:focus{
+      border-radius: 3px;
+      border: 1px double $narbar-color;
+    }
+  }
+}

@@ -1,0 +1,130 @@
+.lineIcons{
+  .itemState{
+    font-weight: 400;
+    font-size: 14px;
+    color: black;
+    font-family: "宋体";
+  }
+
+  .myStateLine{
+    margin: 5px auto;
+    .unit{
+      font-size: 13px;
+      color: grey;
+    }
+  }
+
+  .myState{
+    display: inline-block;
+    text-align: left;
+    width: 68px;
+    font-size: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 5px;
+    color: #1296db;
+    font-family: "宋体";
+    //color: white;
+    //background-color: rgba(0,0,0, 0.8);//rgba(243,245,247,0.99);
+    font-weight: 400;
+  }
+
+  .myStateAnswer{
+    display: inline-block;
+    border-bottom: 1px dashed rgba(0,0,0,0.1);
+    padding-left: 30px;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    width: 220px;
+  }
+}
+
+.personalAssets{
+  padding: 8px;
+  .headerTitle{
+    color: grey;
+    font-family: "宋体";
+    font-size: 13px;
+    padding-left: -5px;
+    img{
+      width: 17px;
+      vertical-align: text-top;
+    }
+    &>span{
+      padding-bottom: 5px;
+      border-bottom: 1px  grey;
+      border-bottom-style: dashed;
+    }
+    margin-bottom: 15px;
+  }
+  .divIcons{
+    &>div{
+      margin: 10px 5px;
+      height: 85px;
+      width: 94px;
+      border: 1px solid white;
+    }
+    &>div:hover{
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      cursor: pointer;
+      border-radius: 10px;
+      border: 1px solid gainsboro;
+      //background-color: ghostwhite;
+    }
+  }
+  .floor{
+    margin-top: 15px;
+    p{
+      margin-bottom: 7px;
+      img{
+        width: 20px;
+        vertical-align: text-bottom;
+        padding-right: 5px;
+      }
+      &>span{
+        font-family: "宋体";
+        color: grey;
+        font-size: 13px;
+      }
+    }
+  }
+  .lineHistory{
+    padding-top: 5px;
+    &>figure{
+      width: 65px;
+      margin: 0 auto;
+      img{
+        display: block;
+        margin: 0 auto;
+        width: 30px;
+        border-radius: 20px;
+      }
+      p:nth-of-type(1){
+        color: grey;
+        padding-top: 5px;
+        font-size: 12px;
+        font-weight: 400;
+        text-align: center;
+        font-family: "宋体";
+      }
+      p:nth-of-type(2){
+        text-overflow :ellipsis; /*让截断的文字显示为点点。还有一个值是clip意截断不显示点点*/
+        white-space :nowrap; /*让文字不换行*/
+        overflow : hidden; /*超出要隐藏*/
+        padding-top: 5px;
+        text-align: center;
+        .value{
+          color: #1372ab;
+          font-weight: 600;
+          font-size: 12px;
+        }
+        .unit{
+          font-weight: 400;
+          font-size: 14px;
+          color: grey;
+        }
+      }
+    }
+  }
+}

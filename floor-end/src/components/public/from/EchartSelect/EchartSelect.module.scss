@@ -1,0 +1,18 @@
+.FUISelect{
+  width: 220px;
+  height: 28px;
+  outline: none;
+  border:1px solid transparent;
+  background-color: transparent;
+  border-radius: 5px;
+  color: gainsboro;
+  option{
+    display: inline-block;
+    font-size: 14px;
+    padding-top: 5px;
+    font-family: 宋体;
+  }
+  &:focus{
+    border:1px solid #1372ab;
+  }
+}

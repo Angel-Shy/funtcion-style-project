@@ -1,0 +1,145 @@
+@import "layout";
+@import "iconfontBootstrap";
+
+
+.font-blue{
+  color: #1372ab;
+}
+
+.font-red{
+  color: #ff6768;
+}
+
+.font-black{
+  color: #005C97;
+}
+
+.font-blueDeep{
+  color: #005C97;
+}
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../static/fonts/iconfont/glyphicons-halflings-regular.eot');
+  src: url('../static/fonts/iconfont/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+  url('../static/fonts/iconfont/glyphicons-halflings-regular.woff') format('woff'),
+  url('../static/fonts/iconfont/glyphicons-halflings-regular.ttf') format('truetype'),
+  url('../static/fonts/iconfont/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+@font-face {
+  font-family: 'coling';
+  src: url('../static/fonts/yiqiweiweiyixiao.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'relinks';
+  src: url('../static/fonts/仓耳天群行楷 W01.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'remix';
+  src: url('../static/fonts/义启简圆体.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'han';
+  src: url('../static/fonts/汉仪书魂体简.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'survive';
+  src: url('../static/fonts/碳纤维正粗黑简体.ttf') format('truetype');
+}
+
+$basic-color:#17223b;
+$basic-color-light:#263859;
+$basic-color-light-more:#6b778d;
+$basic-color-light-more-1:#E0F4FF;
+$basic-color-red:#ff6768;
+
+
+.FUIButton{
+  padding: 0px 12px;
+  background-color: $basic-color;
+  outline: none;
+  color: white;
+  font-weight:400;
+  letter-spacing: 2px;
+  text-decoration: none;
+  display: inline-block;
+  white-space: nowrap;
+  cursor: pointer;
+  height: 28px;
+  line-height: 28px;
+  font-size: 13px;
+}
+
+.FUI-btnBlack{
+  background-color: $basic-color;
+  color: white;
+  border: 1px solid $basic-color;
+  &:hover{
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+  }
+}
+
+.FUI-btnGrey{
+  background-color: $basic-color-light-more;
+  color: white;
+  border: none;
+  &:hover{
+    color: white;
+    background-color: $basic-color-light-more;
+  }
+}
+
+.FUI-btnWhite{
+  background-color: white;
+  color: $basic-color;
+  border: 1px solid gainsboro;
+  &:hover{
+    background-color: ghostwhite;
+  }
+}
+
+
+.FUI-btnBlue{
+  background-color: #1296db;//#0577fc;
+  color: white;
+  border: 1px solid #1296db;
+  &:hover{
+    background-color: #005C97;
+  }
+}
+
+.FUI-btnRed{
+  background-color: #ff6768;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid gainsboro;
+  &:hover{
+    background-color: #ff4d4f;
+  }
+}
+
+.FUI-btnDisable{
+  background-color: $basic-color-light-more;
+  color: white;
+  border: 1px solid $basic-color-light-more;
+  cursor: not-allowed;
+  &:hover{
+    color: white;
+    background-color: $basic-color-light-more;
+  }
+}
+
+@each $var in center , left , right  {
+  .text-align-#{$var}{
+    text-align:$var;
+  }
+}
+
+

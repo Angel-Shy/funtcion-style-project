@@ -1,0 +1,190 @@
+.directionImplementContainer{
+  .headerTitle{
+    color: grey;
+    font-family: "宋体";
+    font-size: 13px;
+    padding-left: -5px;
+    img{
+      width: 17px;
+      vertical-align: text-top;
+    }
+    &>span{
+      padding-bottom: 5px;
+      border-bottom: 1px  grey;
+      border-bottom-style: dashed;
+    }
+    margin-bottom: 15px;
+  }
+  padding: 7px;
+  .container{
+    $height: 170px;
+    &>div{
+      margin-bottom: 7px;
+      box-sizing: border-box;
+      //padding: 5px;
+      height: $height;
+      //border-radius: 10px;
+      border: 1px solid gainsboro;
+    }
+    .empty{
+      background-color: gainsboro;
+      border: 1px solid gainsboro;
+      line-height: $height;
+      text-align: center;
+      font-family: "宋体";
+      font-size: 15px;
+      color: white;
+    }
+    .direction{
+      background-color: #E0F4FF;
+      font-family: "宋体";
+      p{
+        margin-bottom: 5px;
+        &>span:nth-of-type(1){
+          color: royalblue;
+          font-size: 12px;
+          padding-right: 10px;
+          display: inline-block;
+          width: 85px;
+        }
+        &>span:nth-of-type(2){
+          padding-left: 15px;
+          color: black;
+          font-size: 12px;
+          //border-bottom: 1px solid gainsboro;
+          display: inline-block;
+          width: 150px;
+        }
+      }
+    }
+    .Direction{
+      display: flex;
+      background-color: white;
+      font-family: "宋体";
+      border-radius: 10px;
+      box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+      transition: all 1s linear 0s;
+      &:hover{
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+      }
+      &>div:nth-of-type(1){
+        height: 100%;
+        display: flex;
+        flex: 0 0 30px;
+        justify-content: center;
+        &>div{
+          margin: auto auto;
+          height: 85%;
+          width: 6px;
+          border-radius: 3px 3px;
+          background-color: #0577fc;
+        }
+      }
+      &>div:nth-of-type(2){
+        width: 100%;
+        .directionHeader{
+          padding-right: 15px;
+          margin-top: 15px;
+          .Name{
+            font-size: 12px;
+            color: grey;
+          }
+          div{
+            height: 14px;
+            font-family: 黑体;
+            font-size: 12px;
+            font-weight: 400;
+            display: inline-block;
+            padding: 5px;
+            border: 1px #0577fc solid;
+          }
+          .type{
+            font-size: 10px;
+            background-color: #0577fc;
+            color: white;
+            border-radius: 13px 0px 0px 13px;
+          }
+          .ID{
+            font-size: 14px;
+            color: #0577fc;
+            background-color: white;
+            border-radius: 0px 13px 13px 0px;
+          }
+        }
+        .values{
+          margin-top: 12px;
+          p{
+            margin-top: 7px;
+            &>img{
+              width: 19px;
+              vertical-align: text-top;
+            }
+            &>img:nth-of-type(2){
+               padding-left: 15px;
+            }
+            .vl{
+              font-size: 15px;
+              color: #1372ab;
+              font-weight: 600;
+            }
+            .unit{
+              font-size: 13px;
+              color: #17223b;
+              font-weight: 400;
+            }
+          }
+          $fontsize: 12px;
+          .firstTime{
+            font-size: $fontsize;
+            background-color: #0577fc;
+            color: white;
+            border-radius: 5px;
+            padding: 4px 8px;
+          }
+          .secondTime{
+            font-size: $fontsize;
+            background-color: #1372ab;
+            color: white;
+            border-radius: 5px;
+            padding: 4px 8px;
+          }
+          .thirdTime{
+            font-size: $fontsize;
+            background-color: #17223b;
+            color: white;
+            border-radius: 5px;
+            padding: 4px 8px;
+          }
+          $paddingLeftLife: 25px;
+          .issue{
+            padding-left: $paddingLeftLife;
+            font-size: 12px;
+            img{
+              width: 15px;
+              vertical-align: text-top;
+              padding-right: 10px;
+            }
+          }
+          .carryOut{
+            padding-left: $paddingLeftLife;
+            font-size: 12px;
+            img{
+              width: 15px;
+              vertical-align: text-top;
+              padding-right: 10px;
+            }
+          }
+          .endCarry{
+            padding-left: $paddingLeftLife;
+            font-size: 12px;
+            img{
+              width: 15px;
+              vertical-align: text-top;
+              padding-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

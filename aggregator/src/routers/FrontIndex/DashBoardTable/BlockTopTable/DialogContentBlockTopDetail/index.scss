@@ -1,0 +1,34 @@
+.dialogContentBlockTopDetail{
+  .myState-line{
+    margin: 9px auto;
+  }
+
+  .myState{
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+    font-size: 13px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #17223b;
+    color: white;
+    font-weight: 500;
+    font-family: 宋体;
+  }
+
+  .myState-answer{
+    display: inline-block;
+    font-family: 宋体;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-left: 30px;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    width: 80%;
+  }
+
+  .longText{
+    max-height: 70px;
+    overflow: auto;
+  }
+}

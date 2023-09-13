@@ -1,0 +1,35 @@
+.historyCalendar{
+  background-color: white;
+  height: 100%;
+  padding-top: 5px;
+  padding-left: 5px;
+  min-width: 300px;
+  .calender-header{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 宋体;
+    padding-bottom: 15px;
+    border-bottom: 1px solid gainsboro;
+    margin-bottom: 21px;
+  }
+  .calender-footer{
+    margin-top: 25px;
+    font-size: 14px;
+  }
+  .calender-body{
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    .day{
+      position: relative;
+      height: 20px;
+      width: 20px;
+      margin: 3px;
+      border: 1px solid lightsteelblue;
+      background-color: white;
+      &:hover{
+        border: 1px solid black;
+      }
+    }
+  }
+}

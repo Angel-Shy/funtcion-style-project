@@ -1,0 +1,23 @@
+.historyHeader{
+  padding: 10px;
+  background-color: white;
+  border: 1px solid gainsboro;
+  border-bottom: 0px !important;
+  margin-right: 15px;
+  margin-left: 15px;
+  &>div:first-of-type{
+    height: 32px;
+    line-height: 32px;
+    color: #1372ab;
+    font-size: 14px;
+    span{
+      color: #4286f4;
+      font-family: 宋体;
+      font-size: 13px;
+    }
+  }
+  &>div:nth-of-type(2){
+    padding-right: 5px;
+  }
+}
+

@@ -1,0 +1,21 @@
+@each $var in center , left , right  {
+  .text-align-#{$var}{
+    text-align:$var;
+  }
+}
+
+.weight{
+  font-weight: 600;
+}
+
+.font-blue{
+  color: #1372ab;
+}
+
+.font-red{
+  color: #ff6768;
+}
+
+.font-black{
+  color: #005C97;
+}

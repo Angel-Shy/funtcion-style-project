@@ -1,0 +1,48 @@
+$zIndex: 1000;
+.dialogBackground{
+  z-index: $zIndex;
+  height: 100%;
+  width: 100%;
+  opacity: 0.15;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background-color: black;
+}
+
+
+.loadingFont{
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.dialogLoading{
+  z-index: $zIndex + 2;
+  position: fixed;
+  top: 40%;
+  left: 0px;
+  right: 0px;
+  margin-left:auto;
+  margin-right:auto;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 10px;
+  .loading > img{
+    vertical-align: middle;
+  }
+  .loadingMessage{
+    padding-left: 10px;
+    vertical-align: top;
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    color: gray;
+  }
+}
+
+
+
+
+

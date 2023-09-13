@@ -1,0 +1,34 @@
+$layout-gap:85px;
+@while $layout-gap >= 0px {
+  .margin-top-#{$layout-gap}{
+    margin-top: $layout-gap;
+  }
+  .margin-bottom-#{$layout-gap}{
+    margin-bottom: $layout-gap;
+  }
+  .margin-left-#{$layout-gap}{
+    margin-left: $layout-gap;
+  }
+  .margin-right-#{$layout-gap}{
+    margin-right: $layout-gap;
+  }
+  .padding-top-#{$layout-gap}{
+    padding-top: $layout-gap;
+  }
+  .padding-left-#{$layout-gap}{
+    padding-left: $layout-gap;
+  }
+  .padding-right-#{$layout-gap}{
+    padding-right: $layout-gap;
+  }
+  .padding-bottom-#{$layout-gap}{
+    padding-bottom: $layout-gap;
+  }
+  .margin-#{$layout-gap}{
+    margin: $layout-gap;
+  }
+  .padding-#{$layout-gap}{
+    padding:$layout-gap;
+  }
+  $layout-gap : $layout-gap - 5;
+}
